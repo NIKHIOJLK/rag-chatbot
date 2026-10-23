@@ -1,0 +1,67 @@
+{"question": "How do I do floor division in Python?", "page": "tutorial/introduction.html", "keywords": ["//"]}
+{"question": "How do I get the remainder of a division?", "page": "tutorial/introduction.html", "keywords": ["%"]}
+{"question": "How do I calculate powers, like 2 to the power of 10?", "page": "tutorial/introduction.html", "keywords": ["**"]}
+{"question": "How do I slice a string?", "page": "tutorial/introduction.html", "keywords": ["slic"]}
+{"question": "Can I change a character inside a string?", "page": "tutorial/introduction.html", "keywords": ["immutable"]}
+{"question": "What is a raw string?", "page": "tutorial/introduction.html", "keywords": ["raw string"]}
+{"question": "How does the for statement work in Python?", "page": "tutorial/controlflow.html", "keywords": ["for statement"]}
+{"question": "How do I loop over a sequence of numbers?", "page": "tutorial/controlflow.html", "keywords": ["range("]}
+{"question": "What does the break statement do in a loop?", "page": "tutorial/controlflow.html", "keywords": ["break"]}
+{"question": "What is the pass statement used for?", "page": "tutorial/controlflow.html", "keywords": ["pass"]}
+{"question": "How does the match statement work?", "page": "tutorial/controlflow.html", "keywords": ["match"]}
+{"question": "How do I give a function parameter a default value?", "page": "tutorial/controlflow.html", "keywords": ["default"]}
+{"question": "What are keyword arguments?", "page": "tutorial/controlflow.html", "keywords": ["keyword argument"]}
+{"question": "What is a lambda expression?", "page": "tutorial/controlflow.html", "keywords": ["lambda"]}
+{"question": "How do I write a docstring for a function?", "page": "tutorial/controlflow.html", "keywords": ["docstring", "documentation string"]}
+{"question": "How do I accept any number of arguments in a function?", "page": "tutorial/controlflow.html", "keywords": ["arbitrary argument", "*args"]}
+{"question": "Can a for loop have an else clause?", "page": "tutorial/controlflow.html", "keywords": ["else"]}
+{"question": "How do I add an item to the end of a list?", "page": "tutorial/datastructures.html", "keywords": ["append"]}
+{"question": "How can I use a list as a stack?", "page": "tutorial/datastructures.html", "keywords": ["stack"]}
+{"question": "How do I use a list as a queue efficiently?", "page": "tutorial/datastructures.html", "keywords": ["deque"]}
+{"question": "What is a list comprehension?", "page": "tutorial/datastructures.html", "keywords": ["comprehension"]}
+{"question": "How do I delete an item from a list by its index?", "page": "tutorial/datastructures.html", "keywords": ["del"]}
+{"question": "What is a tuple?", "page": "tutorial/datastructures.html", "keywords": ["tuple"]}
+{"question": "How do I remove duplicates using a set?", "page": "tutorial/datastructures.html", "keywords": ["duplicate"]}
+{"question": "How do I loop over a dictionary's keys and values together?", "page": "tutorial/datastructures.html", "keywords": ["items()"]}
+{"question": "How do I get the index and the value when looping?", "page": "tutorial/datastructures.html", "keywords": ["enumerate"]}
+{"question": "How do I loop over two lists at the same time?", "page": "tutorial/datastructures.html", "keywords": ["zip"]}
+{"question": "What is a module in Python?", "page": "tutorial/modules.html", "keywords": ["module"]}
+{"question": "What does if __name__ == '__main__' mean?", "page": "tutorial/modules.html", "keywords": ["__main__"]}
+{"question": "What is a Python package?", "page": "tutorial/modules.html", "keywords": ["package"]}
+{"question": "Where does Python search for modules when importing?", "page": "tutorial/modules.html", "keywords": ["sys.path", "search path"]}
+{"question": "What is the __init__.py file for?", "page": "tutorial/modules.html", "keywords": ["__init__.py"]}
+{"question": "How do I use f-strings to format output?", "page": "tutorial/inputoutput.html", "keywords": ["f-string", "formatted string literal"]}
+{"question": "How do I open and read a file?", "page": "tutorial/inputoutput.html", "keywords": ["open("]}
+{"question": "Why should I use the with keyword for files?", "page": "tutorial/inputoutput.html", "keywords": ["with"]}
+{"question": "How do I save data as JSON?", "page": "tutorial/inputoutput.html", "keywords": ["json"]}
+{"question": "How do I handle an exception?", "page": "tutorial/errors.html", "keywords": ["try"]}
+{"question": "How do I raise an exception myself?", "page": "tutorial/errors.html", "keywords": ["raise"]}
+{"question": "What does the finally clause do?", "page": "tutorial/errors.html", "keywords": ["finally"]}
+{"question": "How do I create my own exception type?", "page": "tutorial/errors.html", "keywords": ["user-defined", "exception"]}
+{"question": "How do I define a class?", "page": "tutorial/classes.html", "keywords": ["class"]}
+{"question": "What is the __init__ method of a class?", "page": "tutorial/classes.html", "keywords": ["__init__"]}
+{"question": "How does inheritance work in Python classes?", "page": "tutorial/classes.html", "keywords": ["inherit"]}
+{"question": "What are generators and the yield keyword?", "page": "tutorial/classes.html", "keywords": ["yield"]}
+{"question": "Does Python have private variables?", "page": "tutorial/classes.html", "keywords": ["private"]}
+{"question": "How do iterators work?", "page": "tutorial/classes.html", "keywords": ["__next__", "iter"]}
+{"question": "How do I create a virtual environment?", "page": "tutorial/venv.html", "keywords": ["venv"]}
+{"question": "How do I install a package with pip?", "page": "tutorial/venv.html", "keywords": ["pip install"]}
+{"question": "Why is 0.1 + 0.2 not exactly 0.3?", "page": "tutorial/floatingpoint.html", "keywords": ["0.1"]}
+{"question": "How do I work with dates and times?", "page": "tutorial/stdlib.html", "keywords": ["datetime"]}
+{"question": "How do I generate random numbers?", "page": "tutorial/stdlib.html", "keywords": ["random"]}
+{"question": "What does the built-in sorted() function do?", "page": "library/functions.html", "keywords": ["sorted("]}
+{"question": "What does isinstance() check?", "page": "library/functions.html", "keywords": ["isinstance"]}
+{"question": "What exception is raised when a dictionary key is missing?", "page": "library/exceptions.html", "keywords": ["keyerror"]}
+{"question": "When is ZeroDivisionError raised?", "page": "library/exceptions.html", "keywords": ["zerodivisionerror"]}
+{"question": "What is a load balancer?", "out_of_scope": true}
+{"question": "How do I center a div in CSS?", "out_of_scope": true}
+{"question": "Who won the 2018 FIFA World Cup?", "out_of_scope": true}
+{"question": "What is the capital of Australia?", "out_of_scope": true}
+{"question": "How do I configure a Kubernetes ingress?", "out_of_scope": true}
+{"question": "How does the React useEffect hook work?", "out_of_scope": true}
+{"question": "What is the best pizza topping?", "out_of_scope": true}
+{"question": "How do I write a SQL JOIN between two tables?", "out_of_scope": true}
+{"question": "What is photosynthesis?", "out_of_scope": true}
+{"question": "How do I set up a Spring Boot project?", "out_of_scope": true}
+{"question": "What is the stock price of Apple today?", "out_of_scope": true}
+{"question": "How do I bake sourdough bread?", "out_of_scope": true}

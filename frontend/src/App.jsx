@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import './App.css'
 
+// Backend address: set VITE_API_URL in frontend/.env for deployment
+const API_URL = (import.meta.env.VITE_API_URL ?? 'http://127.0.0.1:8000').replace(/\/$/, '')
+
 function App() {
   const [question, setQuestion] = useState('')
   const [messages, setMessages] = useState([])
@@ -15,12 +18,15 @@ function App() {
     setQuestion('')
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/ask', {
+      // send the last few turns so follow-up questions make sense
+      const history = messages.slice(-6).map(m => ({ role: m.role === 'user' ? 'user' : 'assistant', content: m.text }))
+      const response = await fetch(`${API_URL}/api/ask`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ question: userMessage.text })
+        body: JSON.stringify({ question: userMessage.text, history })
       })
       const data = await response.json()
+      if (!response.ok) throw new Error(data.detail || 'Request failed')
 
       const botMessage = {
         role: 'bot',
@@ -29,7 +35,8 @@ function App() {
       }
       setMessages(prev => [...prev, botMessage])
     } catch (err) {
-      setMessages(prev => [...prev, { role: 'bot', text: 'Error: could not reach the server. Is the backend running?' }])
+      const text = err instanceof TypeError ? 'Error: could not reach the server. Is the backend running?' : `Error: ${err.message}`
+      setMessages(prev => [...prev, { role: 'bot', text }])
     } finally {
       setLoading(false)
     }
@@ -51,8 +58,8 @@ function App() {
             {msg.sources && msg.sources.length > 0 && (
               <div className="sources">
                 Sources:
-                {msg.sources.map((src, j) => (
-                  <a key={j} href={src} target="_blank" rel="noreferrer">{src}</a>
+                {msg.sources.map((src) => (
+                  <a key={src.n} href={src.url} target="_blank" rel="noreferrer">[{src.n}] {src.title}</a>
                 ))}
               </div>
             )}
